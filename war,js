@@ -1,0 +1,17 @@
+var War = function(){
+  this.x= 100/2;
+  this.y = 700/2;
+  
+};
+
+War.prototype.update = function(){
+    this.x+=random(-3,3);
+    this.y +=random(-3,3);
+};
+
+War.prototype.show = function(){
+   
+    fill(random(150)%100,random(150)%100,random(150)%100);
+    noStroke();
+    rect(this.x, this.y,20,20);
+};
